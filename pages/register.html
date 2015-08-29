@@ -1,10 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Brand</a>
+        </div>
 
-</body>
-</html>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <form method="get" action="http://www.google.com/search">
+                <input type="text" name="q" size="31" maxlength="255" value="" class="form-control" placeholder="Search" />
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Register<span class="sr-only">(current)</span></a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#">About and FAQs</a></li>
+                <li><a href="#">Partner</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div ng-controller="registerController" class="login">
+    <input class="form-control" type="text" id="username" ng-model="usernameregister" placeholder="USERNAME"><br>
+    <input class="form-control" type="password" id="passwordregister" ng-model="password" placeholder="PASSWORD"><br>
+    <input class="form-control" type="password" id="passwordregisterConfirm" ng-model="passwordregisterConfirm" placeholder="CONFIRM PASSWORD"><br>
+    <input class="form-control" type="number" id="phoneregister" ng-model="phoneregister" placeholder="ENTER 10 DIGIT PHONE NUMBER" ><br>
+    <button class="btn btn-default" ng-click="register()" style=" margin-left: 41%;height: 45px; width: 86px;"> Register </button><br><br>
+
+</div>

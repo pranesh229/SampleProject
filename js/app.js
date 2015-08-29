@@ -7,6 +7,13 @@ var phonecatApp =angular.module('myApp', ['ngRoute'])
 
 
     });
+phonecatApp.controller('registerController',function($scope){
+
+    $scope.register = function(){
+        alert("sgf");
+
+    };
+});
 phonecatApp.config(['$routeProvider',
     function($routeProvider) {
         $routeProvider.
@@ -14,9 +21,9 @@ phonecatApp.config(['$routeProvider',
                 templateUrl: 'pages/login.html',
                 controller: 'MainController'
             }).
-            when('signup.html', {
-                templateUrl: 'pages/login.html',
-                controller: 'MainController'
+            when('/signup', {
+                templateUrl: 'pages/register.html',
+                controller: 'registerController'
             }).
             otherwise({
                 redirectTo: '/login'
