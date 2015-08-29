@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var phonecatApp =angular.module('myApp', ['ngRoute'])
     .controller('MainController', function($scope){
         $scope.change = function(){
@@ -29,3 +30,16 @@ phonecatApp.config(['$routeProvider',
                 redirectTo: '/login'
             });
     }]);
+=======
+angular.module('myApp', [])
+    .controller('MainController', function($scope){
+        $scope.change = function(){
+            $scope.nameid = "Pranesh";
+            changetextContent();
+        }
+
+    });
+function changetextContent(){
+    $("#text1").val("string");
+}
+>>>>>>> e054fcf0232b5cf232ef9ed423cd6c6da3f6fae9
