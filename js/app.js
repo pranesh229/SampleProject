@@ -1,3 +1,4 @@
+
 var phonecatApp =angular.module('myApp', ['ngRoute'])
     .controller('MainController', function($scope){
         $scope.login = function(){
@@ -44,12 +45,14 @@ phonecatApp.controller('registerController',function($scope){
     };
 });
 phonecatApp.controller('homepageController',function($scope){
+
     $('.section1 ul li').addClass('animated slideInLeft');
     $('.section3 h3').addClass('animated fadeIn');
     $('.section3 p').addClass('animated fadeIn');
     $('.carousel').carousel({
         interval: 2000
     });
+    $("#fakeLoader").fakeLoader();
 });
 phonecatApp.config(['$routeProvider',
     function($routeProvider) {
