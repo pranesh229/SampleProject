@@ -1,0 +1,96 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <br>
+            <form method="get" action="http://www.google.com/search">
+                <input type="text" name="q" size="31" maxlength="255" value="" class="form-control" placeholder="Search" style="width: 70%;display: inline;"/>
+                <button type="submit" class="btn btn-default" style="margin-left: 10px;">Submit</button>
+            </form>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#login">Login<span class="sr-only">(current)</span></a></li>
+                <li><a href="#">About and FAQs</a></li>
+                <li><a href="#">Partner</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div ng-controller="homepageController" class="homepage">
+    <section class="section2">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="    height: 180px;background-color: dimgray;">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <h1>Presenting</h1>
+                </div>
+
+                <div class="item">
+                    <h1>Demo</h1>
+                </div>
+
+                <div class="item">
+                    <h1>By</h1>
+                </div>
+
+                <div class="item">
+                    <h1>Pranesh</h1>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <section class="section1">
+        <h2>Projects</h2>
+        <ul>
+            <li>Aircel Chennai Open</li>
+            <li>Zain Self-Care</li>
+            <li>Cash-Pro</li>
+            <li>Nectar & Sainsbury</li>
+            <li>NS TC</li>
+            <li>Airmiles ME</li>
+        </ul>
+    </section>
+
+    <section class="section3">
+        <h2>Contact</h2>
+        <address>
+            <h3>Pranesh</h3>
+            <p>A 211,Rail Vihar, <br>MDC-4<br>Panchkula<br><br>+91 98555 32498</p>
+            <span></span>
+        </address>
+
+    </section>
+    <footer>
+        <span></span>
+    </footer>
+
+</div>
