@@ -10,7 +10,7 @@
 .homepage .section1{
     padding: 3px;
     background: white;
-
+    -vendor-animation-duration: 5s;
 }
 .homepage .section2{
     background: #252525;
@@ -42,6 +42,8 @@
 .homepage .section3{
     background: #252525;
     padding: 3px;
+    -vendor-animation-duration: 5s;
+    -vendor-animation-delay: 5s;
 }
 .homepage .section3 h2 {
     font-size: 30px;
