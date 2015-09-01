@@ -1,10 +1,21 @@
 
 var phonecatApp =angular.module('myApp', ['ngRoute'])
-    .controller('MainController', function($scope){
+    .controller('MainController', function ($scope) {
+        console.log("count");
+        $("head").append('<script src="js/login.js"></script>');
         $scope.login = function(){
             if($scope.username!="" && $scope.username != null && $scope.username != undefined ) {
                 if ($scope.password != "" && $scope.password != null && $scope.password != undefined) {
-
+                    var isLogIn = false;
+                     logIn($scope.username, $scope.password, function (isTrue) {
+                         if (isTrue) {
+                             alert("inside callback");
+                         }
+                         else {
+                             $(".errorUserId").css("display", "block");
+                         }
+                         
+                    });                                  
                 }else{
                     $(".errorPassword").css("display", "block");
                 }
@@ -73,3 +84,4 @@ phonecatApp.config(['$routeProvider',
                 redirectTo: '/homepage'
             });
     }]);
+
